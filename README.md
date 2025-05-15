@@ -9,7 +9,7 @@
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
    3. [🛠️ Implementación de PCA](#53--️-implementación-de-pca)
    4. [🛠️ Implementación de t-SNE](#54--️-implementación-de-t-sne)
-6. [6. 📊 Visualización de resultados](#6---visualización-de-resultados)
+6. [📊 Visualización de resultados](#6---visualización-de-resultados)
 
 ## 1.- 📂 Descripción del proyecto
 El equipo de Marketing está preparando una campaña publicitaria para productos relacionados con la inteligencia artificial y nos ha solicitado que les proporcionemos palabras clave que optimicen sus búsquedas en Google.
