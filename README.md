@@ -156,21 +156,6 @@ En ambos casos aparece un clúster con un solo elemento (posible outlier), pero 
 - **CLÚSTER 4:** Descartando al 2, este es el que tiene más impresiones y Clicks (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA VISIBILIDAD)
 
 
-#### Visualización en 2D de los Clúster usando PCA
-
-Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2, ya que representa un outlier que afecta la escala
-
-<p align="center">
-<img src="imagenes/kmeanspca2d.png" width="500">
-</p>
-
-#### Visualización en 2D de los Clúster usando t-SNE
-
-Se utilizó perplexity=30 y learning_rate=200
-
-<p align="center">
-<img src="imagenes/kmeanstsne.png" width="500">
-</p>
 
 **Interpretación de ambas visualizaciones**
 
@@ -238,18 +223,6 @@ Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos
 <img src="imagenes/Segmentación por DBSCAN_2.png" width="500">
 </p>
 
-**Interpretación**
-
-**Clúster -1:** Mayor volumen de tráfico con buen TasaClicks (44.6%) pero CostoxClick más alto (0.45); no fue agrupado, posiblemente por comportamiento variado.
-
- **CLÚSTER 0:**  Sin clics y sin efectividad; tráfico irrelevante.
-
-**Clúster 1:** Rendimiento aceptable con TasaClicks del 28.9% y CostoxClick moderado (0.25).
-
-**Clúster 2:** Mejor eficiencia costo-beneficio con bajo CostoxClick (0.21) y buen TasaClicks (27%).
-
-**Clúster 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
-
 **CLUSTERING CON DBSCAN CON VALORES ATÍPICOS**
 | DBSCAN_Cluster | Impresiones | Clicks   | Costo x Click | Tasa de Clicks |
 |----------------|-------------|----------|----------------|----------------|
@@ -266,11 +239,36 @@ Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos
 | 1              | 6.400616    | 1.0    | 0.250755       | 0.289368       |
 | 2              | 11.343137   | 2.0    | 0.213627       | 0.270499       |
 | 3              | 1.000000    | 1.0    | 0.280737       | 1.000000       |
+**Interpretación**
 
-### 5.3.- 🛠️ Implementación de PCA 
+**Clúster -1:** Mayor volumen de tráfico con buen TasaClicks (44.6%) pero CostoxClick más alto (0.45); no fue agrupado, posiblemente por comportamiento variado.
 
-### 5.4.- 🛠️ Implementación de t-SNE 
+ **CLÚSTER 0:**  Sin clics y sin efectividad; tráfico irrelevante.
 
+**Clúster 1:** Rendimiento aceptable con TasaClicks del 28.9% y CostoxClick moderado (0.25).
+
+**Clúster 2:** Mejor eficiencia costo-beneficio con bajo CostoxClick (0.21) y buen TasaClicks (27%).
+
+**Clúster 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
+
+
+### 5.3.- 🛠️ Implementación de PCA
+#### Visualización en 2D de los Clúster usando PCA
+
+Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2, ya que representa un outlier que afecta la escala
+
+<p align="center">
+<img src="imagenes/kmeanspca2d.png" width="500">
+</p>
+
+### 5.4.- 🛠️ Implementación de t-SNE
+#### Visualización en 2D de los Clúster usando t-SNE
+
+Se utilizó perplexity=30 y learning_rate=200
+
+<p align="center">
+<img src="imagenes/kmeanstsne.png" width="500">
+</p>
 ## 6. Visualización de resultados
 
 ### 6.1.- Gráficos comparativos entre K-means y DBSCAN.
