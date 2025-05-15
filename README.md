@@ -228,11 +228,12 @@ Agrupaciones densas de puntos sin necesidad de conocer cuantos cluster tienen.
 
 **Entrenar el modelo**
 
-Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos y menos ruido, mejorando la agrupación de datos relevantes. Comparado con eps=0.6 y min_samples=10, el segundo entrenamiento ofrece mejor estabilidad y segmentación más precisa.
+Con eps=0.6 y min_samples=10, el primer entrenamiento ofrece mejor estabilidad y segmentación más precisa.
 <p align="center">
 <img src="imagenes/Segmentación por DBSCAN.png" width="500">
 </p>
 
+Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos y menos ruido, mejorando la agrupación de datos relevantes.
 <p align="center">
 <img src="imagenes/Segmentación por DBSCAN_2.png" width="500">
 </p>
