@@ -10,9 +10,9 @@
    3. [🛠️ Implementación de PCA](#53--️-implementación-de-pca)
    4. [🛠️ Implementación de t-SNE](#54--️-implementación-de-t-sne)
 6. [📊 Visualización de resultados](#6---visualización-de-resultados)
-   1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61--️-gráficos-comparativos-entre-k-means-y-dbscan)
-   2. [📊 Gráficos comparativos entre PCA y t-SNE](#62--️-gráficos-comparativos-entre-PCA-y-t-sne)
-   3. [📊 Tabla resumen de características medias por cluster](#63--️-tabla-resumen-de-características-medias-por-cluster)
+   1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61---gráficos-comparativos-entre-k-means-y-dbscan)
+   2. [📊 Gráficos comparativos entre PCA y t-SNE](#62---gráficos-comparativos-entre-pca-y-t-sne)
+   3. [📊 Tabla resumen de características medias por cluster](#63---tabla-resumen-de-características-medias-por-cl)
 7. [💬 Reflexión y comunicación](#7---reflexión-y-comunicación)
 ## 1.- 📂 Descripción del proyecto
 El equipo de Marketing está preparando una campaña publicitaria para productos relacionados con la inteligencia artificial y nos ha solicitado que les proporcionemos palabras clave que optimicen sus búsquedas en Google.
