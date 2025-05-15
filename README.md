@@ -1,4 +1,4 @@
-# Aprendizaje No Supervisado 
+los# Aprendizaje No Supervisado 
 ## 📑 Índice
 1. [📂 Descripción y Estructura del Proyecto](#1---descripción-y-estructura-del-proyecto)
 2. [💻 Entorno de Trabajo](#2---entorno-de-trabajo-y-librerías-utilizadas)
@@ -297,10 +297,10 @@ Se utilizó perplexity=30 y learning_rate=200
 
 ## 7.- 💬 Reflexión y comunicación
 
-Las principales diferencias encontradas fueron:
+Las principales diferencias encontradas en los diferentes fueron:
 - En K-Means clústeres más definidos, incluyendo un outlier (Clúster 2) con comportamiento extremo.
 - En DBSCAN más robusto frente a outliers (los omite) y se centra en patrones comunes.
 
-La principal limitante fue la falta de interpretabilidad al considerar más variables.
+La principal limitante en el conjunto de la evaluación fue la falta de interpretabilidad al considerar más variables.
 
 
