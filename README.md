@@ -222,9 +222,43 @@ Se utilizó perplexity=30 y learning_rate=200
 | ia para programação                     | 80          | 21     | 0.49        | 0.262500   |
 | inteligencia artificial gratis          | 50          | 12     | 0.35        | 0.240000   |
 | ia para criar slides gratuito           | 65          | 15     | 0.32        | 0.230769   |
-
   
 ### 5.2.- 🛠️ Implementación de DBSCAN
+Agrupaciones densas de puntos sin necesidad de conocer cuantos cluster tienen.
+
+**Entrenar el modelo**
+
+Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos y menos ruido, mejorando la agrupación de datos relevantes. Comparado con eps=0.6 y min_samples=10, el segundo entrenamiento ofrece mejor estabilidad y segmentación más precisa.
+
+
+**Interpretación**
+
+**Clúster -1:** Mayor volumen de tráfico con buen TasaClicks (44.6%) pero CostoxClick más alto (0.45); no fue agrupado, posiblemente por comportamiento variado.
+
+ **CLÚSTER 0:**  Sin clics y sin efectividad; tráfico irrelevante.
+
+**Clúster 1:** Rendimiento aceptable con TasaClicks del 28.9% y CostoxClick moderado (0.25).
+
+**Clúster 2:** Mejor eficiencia costo-beneficio con bajo CostoxClick (0.21) y buen TasaClicks (27%).
+
+**Clúster 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
+
+**CLUSTERING CON DBSCAN CON VALORES ATÍPICOS**
+| DBSCAN_Cluster | Impresiones | Clicks   | Costo x Click | Tasa de Clicks |
+|----------------|-------------|----------|----------------|----------------|
+| -1             | 50.576763   | 4.33195  | 0.452656       | 0.445895       |
+| 0              | 1.662834    | 0.00000  | 0.000000       | 0.000000       |
+| 1              | 6.400616    | 1.00000  | 0.250755       | 0.289368       |
+| 2              | 11.343137   | 2.00000  | 0.213627       | 0.270499       |
+| 3              | 1.000000    | 1.00000  | 0.280737       | 1.000000       |
+
+**CLUSTERING CON DBSCAN SIN VALORES ATÍPICOS**
+| DBSCAN_Cluster | Impresiones | Clicks | Costo x Click | Tasa de Clicks |
+|----------------|-------------|--------|----------------|----------------|
+| 0              | 1.662834    | 0.0    | 0.000000       | 0.000000       |
+| 1              | 6.400616    | 1.0    | 0.250755       | 0.289368       |
+| 2              | 11.343137   | 2.0    | 0.213627       | 0.270499       |
+| 3              | 1.000000    | 1.0    | 0.280737       | 1.000000       |
 
 ### 5.3.- 🛠️ Implementación de PCA 
 
