@@ -225,8 +225,8 @@ Se utilizó perplexity=30 y learning_rate=200
 **Interpretación**
 
 - A primera vista se observa que t-SNE logra “estirar” y separar los datos en el plano 2D de una forma que facilita la interpretación visual.
-  
-## 6. 📊 Visualización de resultados
+
+## 6.- 📊 Visualización de resultados
 
 ### 6.1.- 📊 Gráficos comparativos entre K-means y DBSCAN.
 
@@ -291,5 +291,5 @@ Se utilizó perplexity=30 y learning_rate=200
   - El CLÚSTER 3 (alta eficiencia) se visualiza como un grupo relativamente compacto, lo que sugiere que las palabras clave con alta tasa de clics tienden a compartir características similares.
   - El CLÚSTER 4 (alta visibilidad) también forma un grupo compacto, aunque menos extenso que el clúster 3, lo que podría indicar una menor variedad de palabras que generan muchas impresiones y clics.
 
-## 7. 💬 Reflexión y comunicación
+## 7.- 💬 Reflexión y comunicación
 
