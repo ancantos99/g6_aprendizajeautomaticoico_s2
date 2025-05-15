@@ -232,13 +232,13 @@ Se utilizó perplexity=30 y learning_rate=200
 ### 6.1.- Gráficos comparativos entre K-means y DBSCAN.
 
 <p align="center">
-<img src="imagenes/DBSCAN vs K-MEANS" width="500">
+<img src="imagenes/DBSCAN vs K-MEANS.png" width="500">
 </p>
 
 ### 6.2.- Gráficos comparativos entre PCA y t-SNE.
 
 <p align="center">
-<img src="imagenes/PCA VS t-SNE" width="500">
+<img src="imagenes/PCA VS t-SNE.png" width="500">
 </p>
 
 ### 6.3.- Tabla resumen de características medias por cluster.
