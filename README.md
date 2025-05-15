@@ -210,6 +210,7 @@ En ambos casos aparece un clúster con un solo elemento (posible outlier), pero 
 | ia para criar slides gratuito           | 65          | 15     | 0.32        | 0.230769   |
   
 ### 5.2.- 🛠️ Implementación de DBSCAN
+
 Agrupaciones densas de puntos sin necesidad de conocer cuantos cluster tienen.
 
 **Entrenar el modelo**
@@ -253,7 +254,8 @@ Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos
 **Clúster 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
 
 
-### 5.1.- 🛠️ Implementación de K means
+### 5.3.- 🛠️ Implementación de PCA
+
 #### Visualización en 2D de los Clúster usando PCA
 
 Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2, ya que representa un outlier que afecta la escala
@@ -262,7 +264,8 @@ Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2,
 <img src="imagenes/kmeanspca2d.png" width="500">
 </p>
 
-### 5.1.- 🛠️ Implementación de K means
+### 5.4.- 🛠️ Implementación de t-SNE
+
 #### Visualización en 2D de los Clúster usando t-SNE
 
 Se utilizó perplexity=30 y learning_rate=200
