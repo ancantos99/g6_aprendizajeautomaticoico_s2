@@ -7,7 +7,8 @@
 5. [🤖 Implementación de Modelos](#5---implementación-de-modelos)
    1. [🛠️ Implementación de K means](#51--️-implementación-de-k-means)
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
-   3. 
+   3. [🛠️ Implementación de PCA](#53--️-implementación-de-pca)
+   4. [🛠️ Implementación de t-SNE](#54--️-implementación-de-t-sne)
 6. [🔄Gráficos comparativos entre K-means y DBSCAN]()
 
 ## 1.- 📂 Descripción del proyecto
