@@ -9,7 +9,7 @@
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
    3. [🛠️ Implementación de PCA](#53--️-implementación-de-pca)
    4. [🛠️ Implementación de t-SNE](#54--️-implementación-de-t-sne)
-6. [🔄Gráficos comparativos entre K-means y DBSCAN]()
+6. [6. 📊 Visualización de resultados](#6---visualización-de-resultados)
 
 ## 1.- 📂 Descripción del proyecto
 El equipo de Marketing está preparando una campaña publicitaria para productos relacionados con la inteligencia artificial y nos ha solicitado que les proporcionemos palabras clave que optimicen sus búsquedas en Google.
@@ -227,21 +227,21 @@ Se utilizó perplexity=30 y learning_rate=200
 
 - A primera vista se observa que t-SNE logra “estirar” y separar los datos en el plano 2D de una forma que facilita la interpretación visual.
   
-## 6. Visualización de resultados
+## 6. 📊 Visualización de resultados
 
-### 6.1.- Gráficos comparativos entre K-means y DBSCAN.
+### 6.1.- 📊 Gráficos comparativos entre K-means y DBSCAN.
 
 <p align="center">
 <img src="imagenes/DBSCAN vs K-MEANS.png" width="500">
 </p>
 
-### 6.2.- Gráficos comparativos entre PCA y t-SNE.
+### 6.2.- 📊 Gráficos comparativos entre PCA y t-SNE.
 
 <p align="center">
 <img src="imagenes/PCA VS t-SNE.png" width="500">
 </p>
 
-### 6.3.- Tabla resumen de características medias por cluster.
+### 6.3.- 📊 Tabla resumen de características medias por cluster.
 
 #### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER ORDENADOS POR TASA DE CLICKS 
 
@@ -292,5 +292,5 @@ Se utilizó perplexity=30 y learning_rate=200
   - El CLÚSTER 3 (alta eficiencia) se visualiza como un grupo relativamente compacto, lo que sugiere que las palabras clave con alta tasa de clics tienden a compartir características similares.
   - El CLÚSTER 4 (alta visibilidad) también forma un grupo compacto, aunque menos extenso que el clúster 3, lo que podría indicar una menor variedad de palabras que generan muchas impresiones y clics.
 
-## 7. Reflexión y comunicación
+## 7. 💬 Reflexión y comunicación
 
