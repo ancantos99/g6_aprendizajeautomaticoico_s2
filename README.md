@@ -7,6 +7,7 @@
 5. [🤖 Implementación de Modelos](#5---implementación-de-modelos)
    1. [🛠️ Implementación de K means](#51--️-implementación-de-k-means)
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
+   3. 
 6. [🔄Gráficos comparativos entre K-means y DBSCAN]()
 
 ## 1.- 📂 Descripción del proyecto
@@ -252,7 +253,7 @@ Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos
 **Clúster 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
 
 
-### 5.3.- 🛠️ Implementación de PCA
+### 5.1.- 🛠️ Implementación de K means
 #### Visualización en 2D de los Clúster usando PCA
 
 Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2, ya que representa un outlier que afecta la escala
@@ -261,7 +262,7 @@ Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2,
 <img src="imagenes/kmeanspca2d.png" width="500">
 </p>
 
-### 5.4.- 🛠️ Implementación de t-SNE
+### 5.1.- 🛠️ Implementación de K means
 #### Visualización en 2D de los Clúster usando t-SNE
 
 Se utilizó perplexity=30 y learning_rate=200
