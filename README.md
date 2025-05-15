@@ -189,17 +189,14 @@ Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos
 | 1              | 6.400616    | 1.0    | 0.250755       | 0.289368       |
 | 2              | 11.343137   | 2.0    | 0.213627       | 0.270499       |
 | 3              | 1.000000    | 1.0    | 0.280737       | 1.000000       |
+
 **Interpretación**
 
-**Clúster -1:** Mayor volumen de tráfico con buen TasaClicks (44.6%) pero CostoxClick más alto (0.45); no fue agrupado, posiblemente por comportamiento variado.
-
- **CLÚSTER 0:**  Sin clics y sin efectividad; tráfico irrelevante.
-
-**Clúster 1:** Rendimiento aceptable con TasaClicks del 28.9% y CostoxClick moderado (0.25).
-
-**Clúster 2:** Mejor eficiencia costo-beneficio con bajo CostoxClick (0.21) y buen TasaClicks (27%).
-
-**Clúster 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
+**CLÚSTER -1:** Mayor volumen de tráfico con buen TasaClicks (44.6%) pero CostoxClick más alto (0.45); no fue agrupado, posiblemente por comportamiento variado.
+**CLÚSTER 0:**  Sin clics y sin efectividad; tráfico irrelevante.
+**CLÚSTER 1:** Rendimiento aceptable con TasaClicks del 28.9% y CostoxClick moderado (0.25).
+**CLÚSTER 2:** Mejor eficiencia costo-beneficio con bajo CostoxClick (0.21) y buen TasaClicks (27%).
+**CLÚSTER 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
 
 
 ### 5.3.- 🛠️ Implementación de PCA
@@ -234,10 +231,21 @@ Se utilizó perplexity=30 y learning_rate=200
 
 ### 6.1.- Gráficos comparativos entre K-means y DBSCAN.
 
-### 6.2.- Visualizaciones 2D de PCA y t-SNE coloreadas por cluster.
+<p align="center">
+<img src="imagenes/DBSCAN vs K-MEANS" width="500">
+</p>
+
+### 6.2.- Gráficos comparativos entre PCA y t-SNE.
+
+<p align="center">
+<img src="imagenes/PCA VS t-SNE" width="500">
+</p>
 
 ### 6.3.- Tabla resumen de características medias por cluster.
 
+<p align="center">
+<img src="imagenes/kmeanstsne.png" width="500">
+</p>
 
 **Interpretación de ambas visualizaciones**
 
@@ -250,7 +258,7 @@ Se utilizó perplexity=30 y learning_rate=200
 
 #### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER ORDENADOS POR TASA DE CLICKS 
 
-**Cluster 0 (PALABRAS O FRASES IRRELEVANTES):**
+**CLÚSTER 0 (PALABRAS O FRASES IRRELEVANTES):**
 
 | TerminoBusqueda                  | Impresiones | Clicks | CostoxClick | TasaClicks |
 |----------------------------------|-------------|--------|-------------|------------|
@@ -258,7 +266,7 @@ Se utilizó perplexity=30 y learning_rate=200
 | ai game generator                | 7           | 2      | 0.1         | 0.285714   |
 | yapay zeka görsel oluşturma      | 7           | 2      | 0.1         | 0.285714   |
 
-**Cluster 1 (PALABRAS MÁS CARAS PERO CON UNA TASA DE CLICKS ACEPTABLE):**
+**CLÚSTER 1 (PALABRAS MÁS CARAS PERO CON UNA TASA DE CLICKS ACEPTABLE):**
 
 | TerminoBusqueda                                              | Impresiones | Clicks | CostoxClick | TasaClicks |
 |--------------------------------------------------------------|-------------|--------|-------------|------------|
@@ -266,13 +274,13 @@ Se utilizó perplexity=30 y learning_rate=200
 | app de inteligência artificial gratuito                      | 5           | 3      | 0.39        | 0.600000   |
 | openai's musenet                                             | 7           | 4      | 0.53        | 0.571429   |
 
-**Cluster 2 (OUTLIER):**
+**CLÚSTER 2 (OUTLIER):**
 
 | TerminoBusqueda | Impresiones | Clicks | CostoxClick | TasaClicks |
 |-----------------|-------------|--------|-------------|------------|
 | copilot         | 2060        | 47     | 0.1         | 0.022816   |
 
-**Cluster 3 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA EFICIENCIA)**
+**CLÚSTER 3 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA EFICIENCIA)**
 
 | TerminoBusqueda                                | Impresiones | Clicks | CostoxClick | TasaClicks |
 |------------------------------------------------|-------------|--------|-------------|------------|
@@ -280,7 +288,7 @@ Se utilizó perplexity=30 y learning_rate=200
 | ia para apresentação de slides                 | 5           | 3      | 0.25        | 0.600000   |
 | ai project maker                               | 5           | 3      | 0.10        | 0.600000   |
 
-**Cluster 4 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA VISIBILIDAD)**
+**CLÚSTER 4 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA VISIBILIDAD)**
 
 | TerminoBusqueda                          | Impresiones | Clicks | CostoxClick | TasaClicks |
 |-----------------------------------------|-------------|--------|-------------|------------|
