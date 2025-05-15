@@ -9,7 +9,11 @@
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
    3. [🛠️ Implementación de PCA](#53--️-implementación-de-pca)
    4. [🛠️ Implementación de t-SNE](#54--️-implementación-de-t-sne)
-5. [📊 Visualización de resultados](#6---visualización-de-resultados)
+6. [📊 Visualización de resultados](#6---visualización-de-resultados)
+   1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61--️-gráficos-comparativos-entre-k-means-y-dbscan)
+   2. [📊 Gráficos comparativos entre PCA y t-SNE](#62--️-gráficos-comparativos-entre-PCA-y-t-sne)
+   3. [📊 Tabla resumen de características medias por cluster](#63--️-tabla-resumen-de-características-medias-por-cluster)
+7. [💬 Reflexión y comunicación](#7---reflexión-y-comunicación)
 ## 1.- 📂 Descripción del proyecto
 El equipo de Marketing está preparando una campaña publicitaria para productos relacionados con la inteligencia artificial y nos ha solicitado que les proporcionemos palabras clave que optimicen sus búsquedas en Google.
 
@@ -228,19 +232,19 @@ Se utilizó perplexity=30 y learning_rate=200
 
 ## 6.- 📊 Visualización de resultados
 
-### 6.1.- 📊 Gráficos comparativos entre K-means y DBSCAN.
+### 6.1.- 📊 Gráficos comparativos entre K-means y DBSCAN
 
 <p align="center">
 <img src="imagenes/DBSCAN vs K-MEANS.png" width="500">
 </p>
 
-### 6.2.- 📊 Gráficos comparativos entre PCA y t-SNE.
+### 6.2.- 📊 Gráficos comparativos entre PCA y t-SNE
 
 <p align="center">
 <img src="imagenes/PCA VS t-SNE.png" width="500">
 </p>
 
-### 6.3.- 📊 Tabla resumen de características medias por cluster.
+### 6.3.- 📊 Tabla resumen de características medias por cluster
 
 #### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER ORDENADOS POR TASA DE CLICKS 
 
