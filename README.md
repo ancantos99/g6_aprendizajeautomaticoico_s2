@@ -157,59 +157,6 @@ En ambos casos aparece un clúster con un solo elemento (posible outlier), pero 
 - **CLÚSTER 3:** Tiente más tasa de clicks promedio 91% (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA EFICIENCIA)
 - **CLÚSTER 4:** Descartando al 2, este es el que tiene más impresiones y Clicks (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA VISIBILIDAD)
 
-
-
-**Interpretación de ambas visualizaciones**
-
-- PCA muestra el Clúster 4 (Rosado en PCA) relativamente aislado en la parte superior lo que sugiere que tiene características bastantes distintas al resto de datos
-- A primera vista se observa que t-SNE logra “estirar” y separar los datos en el plano 2D de una forma que facilita la interpretación visual.
-- En ambos gráficos, pero mucho más en el t-SNE se observa una separación clara de los clústeres, en el gráfico PCA los clústers 0,1,3 se superponen un poco
-- en nuestro caso es más útil el gráfico t-SNE para realizar un análisis
-  - El CLÚSTER 0 (palabras irrelevantes) se encuentra en varias áreas dispersas, lo que podría indicar que en este grupo algunas palabras no son útiles pero otras si.
-  - El CLÚSTER 1 (palabras caras con tasa de clicks aceptable) parece formar un grupo más definido, aunque con cierta dispersión, pero esta dispersión sigue compacta, lo que podría reflejar la variabilidad en el costo y la tasa de clics dentro de este grupo.
-  - El CLÚSTER 3 (alta eficiencia) se visualiza como un grupo relativamente compacto, lo que sugiere que las palabras clave con alta tasa de clics tienden a compartir características similares.
-  - El CLÚSTER 4 (alta visibilidad) también forma un grupo compacto, aunque menos extenso que el clúster 3, lo que podría indicar una menor variedad de palabras que generan muchas impresiones y clics.
-
-#### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER ORDENADOS POR TASA DE CLICKS 
-
-**Cluster 0 (PALABRAS O FRASES IRRELEVANTES):**
-
-| TerminoBusqueda                  | Impresiones | Clicks | CostoxClick | TasaClicks |
-|----------------------------------|-------------|--------|-------------|------------|
-| https www decohere ai            | 6           | 2      | 0.1         | 0.333333   |
-| ai game generator                | 7           | 2      | 0.1         | 0.285714   |
-| yapay zeka görsel oluşturma      | 7           | 2      | 0.1         | 0.285714   |
-
-**Cluster 1 (PALABRAS MÁS CARAS PERO CON UNA TASA DE CLICKS ACEPTABLE):**
-
-| TerminoBusqueda                                              | Impresiones | Clicks | CostoxClick | TasaClicks |
-|--------------------------------------------------------------|-------------|--------|-------------|------------|
-| ia que cria imagens de graça                                 | 7           | 5      | 0.38        | 0.714286   |
-| app de inteligência artificial gratuito                      | 5           | 3      | 0.39        | 0.600000   |
-| openai's musenet                                             | 7           | 4      | 0.53        | 0.571429   |
-
-**Cluster 2 (OUTLIER):**
-
-| TerminoBusqueda | Impresiones | Clicks | CostoxClick | TasaClicks |
-|-----------------|-------------|--------|-------------|------------|
-| copilot         | 2060        | 47     | 0.1         | 0.022816   |
-
-**Cluster 3 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA EFICIENCIA)**
-
-| TerminoBusqueda                                | Impresiones | Clicks | CostoxClick | TasaClicks |
-|------------------------------------------------|-------------|--------|-------------|------------|
-| doctrina ai exam                               | 9           | 6      | 0.09        | 0.666667   |
-| ia para apresentação de slides                 | 5           | 3      | 0.25        | 0.600000   |
-| ai project maker                               | 5           | 3      | 0.10        | 0.600000   |
-
-**Cluster 4 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA VISIBILIDAD)**
-
-| TerminoBusqueda                          | Impresiones | Clicks | CostoxClick | TasaClicks |
-|-----------------------------------------|-------------|--------|-------------|------------|
-| ia para programação                     | 80          | 21     | 0.49        | 0.262500   |
-| inteligencia artificial gratis          | 50          | 12     | 0.35        | 0.240000   |
-| ia para criar slides gratuito           | 65          | 15     | 0.32        | 0.230769   |
-  
 ### 5.2.- 🛠️ Implementación de DBSCAN
 
 Agrupaciones densas de puntos sin necesidad de conocer cuantos cluster tienen.
@@ -265,6 +212,10 @@ Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2,
 <img src="imagenes/kmeanspca2d.png" width="500">
 </p>
 
+**Interpretación**
+
+- PCA muestra el Clúster 4 (Rosado en PCA) relativamente aislado en la parte superior lo que sugiere que tiene características bastantes distintas al resto de datos
+- 
 ### 5.4.- 🛠️ Implementación de t-SNE
 
 #### Visualización en 2D de los Clúster usando t-SNE
@@ -274,6 +225,11 @@ Se utilizó perplexity=30 y learning_rate=200
 <p align="center">
 <img src="imagenes/kmeanstsne.png" width="500">
 </p>
+
+**Interpretación**
+
+- A primera vista se observa que t-SNE logra “estirar” y separar los datos en el plano 2D de una forma que facilita la interpretación visual.
+  
 ## 6. Visualización de resultados
 
 ### 6.1.- Gráficos comparativos entre K-means y DBSCAN.
@@ -282,4 +238,55 @@ Se utilizó perplexity=30 y learning_rate=200
 
 ### 6.3.- Tabla resumen de características medias por cluster.
 
+
+**Interpretación de ambas visualizaciones**
+
+- En ambos gráficos (PCA y t-SNE), pero mucho más en el t-SNE se observa una separación clara de los clústeres, en el gráfico PCA los clústers 0,1,3 se superponen un poco
+- en nuestro caso es más útil el gráfico t-SNE para realizar un análisis
+  - El CLÚSTER 0 (palabras irrelevantes) se encuentra en varias áreas dispersas, lo que podría indicar que en este grupo algunas palabras no son útiles pero otras si.
+  - El CLÚSTER 1 (palabras caras con tasa de clicks aceptable) parece formar un grupo más definido, aunque con cierta dispersión, pero esta dispersión sigue compacta, lo que podría reflejar la variabilidad en el costo y la tasa de clics dentro de este grupo.
+  - El CLÚSTER 3 (alta eficiencia) se visualiza como un grupo relativamente compacto, lo que sugiere que las palabras clave con alta tasa de clics tienden a compartir características similares.
+  - El CLÚSTER 4 (alta visibilidad) también forma un grupo compacto, aunque menos extenso que el clúster 3, lo que podría indicar una menor variedad de palabras que generan muchas impresiones y clics.
+
+#### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER ORDENADOS POR TASA DE CLICKS 
+
+**Cluster 0 (PALABRAS O FRASES IRRELEVANTES):**
+
+| TerminoBusqueda                  | Impresiones | Clicks | CostoxClick | TasaClicks |
+|----------------------------------|-------------|--------|-------------|------------|
+| https www decohere ai            | 6           | 2      | 0.1         | 0.333333   |
+| ai game generator                | 7           | 2      | 0.1         | 0.285714   |
+| yapay zeka görsel oluşturma      | 7           | 2      | 0.1         | 0.285714   |
+
+**Cluster 1 (PALABRAS MÁS CARAS PERO CON UNA TASA DE CLICKS ACEPTABLE):**
+
+| TerminoBusqueda                                              | Impresiones | Clicks | CostoxClick | TasaClicks |
+|--------------------------------------------------------------|-------------|--------|-------------|------------|
+| ia que cria imagens de graça                                 | 7           | 5      | 0.38        | 0.714286   |
+| app de inteligência artificial gratuito                      | 5           | 3      | 0.39        | 0.600000   |
+| openai's musenet                                             | 7           | 4      | 0.53        | 0.571429   |
+
+**Cluster 2 (OUTLIER):**
+
+| TerminoBusqueda | Impresiones | Clicks | CostoxClick | TasaClicks |
+|-----------------|-------------|--------|-------------|------------|
+| copilot         | 2060        | 47     | 0.1         | 0.022816   |
+
+**Cluster 3 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA EFICIENCIA)**
+
+| TerminoBusqueda                                | Impresiones | Clicks | CostoxClick | TasaClicks |
+|------------------------------------------------|-------------|--------|-------------|------------|
+| doctrina ai exam                               | 9           | 6      | 0.09        | 0.666667   |
+| ia para apresentação de slides                 | 5           | 3      | 0.25        | 0.600000   |
+| ai project maker                               | 5           | 3      | 0.10        | 0.600000   |
+
+**Cluster 4 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA VISIBILIDAD)**
+
+| TerminoBusqueda                          | Impresiones | Clicks | CostoxClick | TasaClicks |
+|-----------------------------------------|-------------|--------|-------------|------------|
+| ia para programação                     | 80          | 21     | 0.49        | 0.262500   |
+| inteligencia artificial gratis          | 50          | 12     | 0.35        | 0.240000   |
+| ia para criar slides gratuito           | 65          | 15     | 0.32        | 0.230769   |
+  
 ## 7. Reflexión y comunicación
+
