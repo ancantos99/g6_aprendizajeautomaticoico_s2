@@ -7,7 +7,7 @@
 5. [🤖 Implementación de Modelos](#5---implementación-de-modelos)
    1. [🛠️ Implementación de K means](#51--️-implementación-de-k-means)
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
-   3. [🛠️ Implementación de PCA](#53--️-implementación-de-pca)
+   3. [🛠️ PCA](#53--️-pca)
    4. [🛠️ Implementación de t-SNE](#54--️-implementación-de-t-sne)
 6. [📊 Visualización de resultados](#6---visualización-de-resultados)
    1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61---gráficos-comparativos-entre-k-means-y-dbscan)
@@ -196,20 +196,20 @@ Muchos puntos están clasificados como -1 (ruido): Esto indica que una gran part
 - **CLÚSTER 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
 
 
-### 5.3.- 🛠️ Implementación de PCA
+### 5.3.- 🛠️ PCA
 
 #### Visualización en 2D de los Clúster usando PCA
 
-Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2, ya que representa un outlier que afecta la escala
+Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2 para K-Means, ya que representa un outlier que afecta la escala
 
 <p align="center">
-<img src="imagenes/kmeanspca2d.png" width="500">
+<img src="imagenes/comparacionpca.png">
 </p>
 
 **Interpretación**
 
-- PCA muestra el Clúster 4 (Rosado en PCA) relativamente aislado en la parte superior lo que sugiere que tiene características bastantes distintas al resto de datos
-- 
+- PCA muestra el Clúster 4 de KMEANS relativamente aislado en la parte superior lo que sugiere que tiene características bastantes distintas al resto de datos, esto mismo sucede con el Clúster -1 en DBSCAN
+ 
 ### 5.4.- 🛠️ Implementación de t-SNE
 
 #### Visualización en 2D de los Clúster usando t-SNE
@@ -217,12 +217,13 @@ Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2,
 Se utilizó perplexity=30 y learning_rate=200
 
 <p align="center">
-<img src="imagenes/kmeanstsne.png" width="500">
+<img src="imagenes/comparaciontsne.png" width="500">
 </p>
 
 **Interpretación**
 
 - A primera vista se observa que t-SNE logra “estirar” y separar los datos en el plano 2D de una forma que facilita la interpretación visual.
+- En este gráfico se aprecia mejor como cada algoritmo (K-Means, DBSCAN) interpreta la estructura interna de los datos. Se observa que DBSCAN muestra mejores fronteras entre grupos visibles
 
 ## 6.- 📊 Visualización de resultados
 
