@@ -11,7 +11,7 @@
    4. [🛠️ Reducción de Dimensionalidad con t-SNE](#54--️-reducción-de-dimensionalidad-con-t-sne)
 6. [📊 Visualización de resultados](#6---visualización-de-resultados)
    1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61---gráficos-comparativos-entre-k-means-y-dbscan)
-   2. [📊 Tabla resumen de características medias por cluster](#63---tabla-resumen-de-características-medias-por-cluster)
+   2. [📊 Tabla resumen por clúster](#62---tabla-resumen-por-clúster)
 7. [💬 Reflexión y comunicación](#7---reflexión-y-comunicación)
 8. [🧑‍💻 Autores](#6---autores)
 ## 1.- 📂 Descripción del proyecto
@@ -233,16 +233,16 @@ Se utilizó perplexity=30 y learning_rate=200
 <img src="imagenes/DBSCAN vs K-MEANS.png" width="500">
 </p>
 
-### 6.2.- 📊 Tabla resumen de características medias por cluster
+### 6.2.- 📊 Tabla resumen por cluster
 
-#### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER ORDENADOS POR TASA DE CLICKS 
+#### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER PARA CADA ALGORITMO Y ORDENADOS POR TASA DE CLICKS 
 
-<table>
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
 	<tbody>
-		<tr> 
-         <td colspan="6">K-Means</td>
-			<td colspan="6">DBSCAN</td>
-		</tr>
+	<tr style="background-color: #333; color: white; text-align: center;">
+      	<th colspan="6" style="padding: 8px; border: 1px solid #999;">K-Means</th>
+      	<th colspan="6" style="padding: 8px; border: 1px solid #999;">DBSCAN</th>
+    	</tr>
 		<tr>
          <td>Clúster</td>
 			<td>TerminoBusqueda</td>
@@ -329,44 +329,6 @@ Se utilizó perplexity=30 y learning_rate=200
 		</tr>
 	</tbody>
 </table>
-
-**CLÚSTER 0 (PALABRAS O FRASES IRRELEVANTES):**
-
-| TerminoBusqueda                  | Impresiones | Clicks | CostoxClick | TasaClicks |
-|----------------------------------|-------------|--------|-------------|------------|
-| https www decohere ai            | 6           | 2      | 0.1         | 0.333333   |
-| ai game generator                | 7           | 2      | 0.1         | 0.285714   |
-| yapay zeka görsel oluşturma      | 7           | 2      | 0.1         | 0.285714   |
-
-**CLÚSTER 1 (PALABRAS MÁS CARAS PERO CON UNA TASA DE CLICKS ACEPTABLE):**
-
-| TerminoBusqueda                                              | Impresiones | Clicks | CostoxClick | TasaClicks |
-|--------------------------------------------------------------|-------------|--------|-------------|------------|
-| ia que cria imagens de graça                                 | 7           | 5      | 0.38        | 0.714286   |
-| app de inteligência artificial gratuito                      | 5           | 3      | 0.39        | 0.600000   |
-| openai's musenet                                             | 7           | 4      | 0.53        | 0.571429   |
-
-**CLÚSTER 2 (OUTLIER):**
-
-| TerminoBusqueda | Impresiones | Clicks | CostoxClick | TasaClicks |
-|-----------------|-------------|--------|-------------|------------|
-| copilot         | 2060        | 47     | 0.1         | 0.022816   |
-
-**CLÚSTER 3 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA EFICIENCIA)**
-
-| TerminoBusqueda                                | Impresiones | Clicks | CostoxClick | TasaClicks |
-|------------------------------------------------|-------------|--------|-------------|------------|
-| doctrina ai exam                               | 9           | 6      | 0.09        | 0.666667   |
-| ia para apresentação de slides                 | 5           | 3      | 0.25        | 0.600000   |
-| ai project maker                               | 5           | 3      | 0.10        | 0.600000   |
-
-**CLÚSTER 4 (CONTIENE PALABRAS O FRASES QUE GENERAN ALTA VISIBILIDAD)**
-
-| TerminoBusqueda                          | Impresiones | Clicks | CostoxClick | TasaClicks |
-|-----------------------------------------|-------------|--------|-------------|------------|
-| ia para programação                     | 80          | 21     | 0.49        | 0.262500   |
-| inteligencia artificial gratis          | 50          | 12     | 0.35        | 0.240000   |
-| ia para criar slides gratuito           | 65          | 15     | 0.32        | 0.230769   |
  
   **Interpretación de ambas visualizaciones**
 
