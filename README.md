@@ -7,8 +7,8 @@
 5. [🤖 Implementación de Modelos](#5---implementación-de-modelos)
    1. [🛠️ Implementación de K means](#51--️-implementación-de-k-means)
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
-   3. [🛠️ PCA](#53--️-pca)
-   4. [🛠️ Implementación de t-SNE](#54--️-implementación-de-t-sne)
+   3. [🛠️ Reducción de Dimensionalidad con PCA](#53--️-reducción-de-dimensionalidad-con-pca)
+   4. [🛠️ Reducción de Dimensionalidad con t-SNE](#54--️-reducción-de-dimensionalidad-con-t-sne)
 6. [📊 Visualización de resultados](#6---visualización-de-resultados)
    1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61---gráficos-comparativos-entre-k-means-y-dbscan)
    2. [📊 Gráficos comparativos entre PCA y t-SNE](#62---gráficos-comparativos-entre-pca-y-t-sne)
@@ -196,7 +196,7 @@ Muchos puntos están clasificados como -1 (ruido): Esto indica que una gran part
 - **CLÚSTER 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
 
 
-### 5.3.- 🛠️ PCA
+### 5.3.- 🛠️ Reducción de Dimensionalidad con PCA
 
 #### Visualización en 2D de los Clúster usando PCA
 
@@ -210,14 +210,14 @@ Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2 
 
 - PCA muestra el Clúster 4 de KMEANS relativamente aislado en la parte superior lo que sugiere que tiene características bastantes distintas al resto de datos, esto mismo sucede con el Clúster -1 en DBSCAN
  
-### 5.4.- 🛠️ Implementación de t-SNE
+### 5.4.- 🛠️ Reducción de Dimensionalidad con t-SNE
 
 #### Visualización en 2D de los Clúster usando t-SNE
 
 Se utilizó perplexity=30 y learning_rate=200
 
 <p align="center">
-<img src="imagenes/comparaciontsne.png" width="500">
+<img src="imagenes/comparaciontsne.png">
 </p>
 
 **Interpretación**
