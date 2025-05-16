@@ -340,11 +340,16 @@ Se utilizó perplexity=30 y learning_rate=200
 
 ## 7.- 💬 Reflexión y comunicación
 
-Las principales diferencias encontradas en los diferentes fueron:
-- En K-Means clústeres más definidos, incluyendo un outlier (Clúster 2) con comportamiento extremo.
-- En DBSCAN más robusto frente a outliers (los omite) y se centra en patrones comunes.
+Al analizar los resultados obtenidos en el proyecto de aprendizaje automático, se identificaron diversos perfiles de términos de búsqueda que reflejan distintas intenciones y comportamientos de los usuarios. Por ejemplo, algunos clústeres agrupan términos irrelevantes o de bajo rendimiento, mientras que otros contienen frases con alta eficiencia o visibilidad. Estos perfiles permiten comprender mejor las necesidades y preferencias de los usuarios, facilitando la toma de decisiones estratégicas en campañas publicitarias y desarrollo de productos.
 
-La principal limitante en el conjunto de la evaluación fue la falta de interpretabilidad al considerar más variables.
+En cuanto a los modelos utilizados, se observaron diferencias clave entre K-Means y DBSCAN:
+
+- En K-Means monstró una mayor sensibilidad a valores atípicos, esto se evidenció en el outlier (Clúster 2) que solo contenía el término "copilot"
+- DBSCAN se mostró más robusto frente a outliers (los omite) y se centra en patrones comunes, fue más eficaz en la detección de clústeres densos y en la identificación de ruido, lo que permitió una segmentación más precisa de los datos.
+
+Sin embargo, ambos modelos enfrentaron limitaciones, como la necesidad de ajustar cuidadosamente los parámetros y la dependencia de la calidad de los datos de entrada. 
+
+La principal limitante en el conjunto de la evaluación fue la falta de interpretabilidad al considerar más variables. A medida que se incorporaban más dimensiones, resultaba más complejo entender el comportamiento de los clústeres y su significado práctico. Esto destaca la importancia de seleccionar variables relevantes y utilizar herramientas de visualización adecuadas para facilitar la comprensión de los resultados.
 
 ## 8.- 🧑‍💻 Autores
 
