@@ -177,15 +177,15 @@ Con eps=0.8 y min_samples=15, el modelo DBSCAN generó clústeres más definidos
 </p>
 
 **CLUSTERING CON DBSCAN CON VALORES ATÍPICOS**
-| DBSCAN_Cluster | Impresiones | Clicks   | Costo x Click | Tasa de Clicks |
-|----------------|-------------|----------|----------------|----------------|
-| -1             | 50.576763   | 4.33195  | 0.452656       | 0.445895       |
-| 0              | 1.662834    | 0.00000  | 0.000000       | 0.000000       |
-| 1              | 6.400616    | 1.00000  | 0.250755       | 0.289368       |
-| 2              | 11.343137   | 2.00000  | 0.213627       | 0.270499       |
-| 3              | 1.000000    | 1.00000  | 0.280737       | 1.000000       |
+| DBSCAN_Cluster | Impresiones | Clicks   | Costo x Click | Tasa de Clicks | Cantidad de elementos |
+|----------------|-------------|----------|----------------|----------------|-------|
+| -1             | 50.576763   | 4.33195  | 0.452656       | 0.445895       | 241|
+| 0              | 1.662834    | 0.00000  | 0.000000       | 0.000000       | 12786|
+| 1              | 6.400616    | 1.00000  | 0.250755       | 0.289368       | 649|
+| 2              | 11.343137   | 2.00000  | 0.213627       | 0.270499       | 102|
+| 3              | 1.000000    | 1.00000  | 0.280737       | 1.000000       | 624|
 
-Muchos puntos están clasificados como -1 (ruido): Esto indica que una gran parte de los datos no fueron agrupados en ningún clúster
+Muchos puntos están clasificados como -1 (ruido): Esto indica que una parte de los datos (241) no fueron agrupados en ningún clúster
 
 **Interpretación**
 
@@ -193,7 +193,7 @@ Muchos puntos están clasificados como -1 (ruido): Esto indica que una gran part
 - **CLÚSTER 0:**  Sin clics y sin efectividad; tráfico irrelevante.
 - **CLÚSTER 1:** Rendimiento aceptable con TasaClicks del 28.9% y CostoxClick moderado (0.25).
 - **CLÚSTER 2:** Mejor eficiencia costo-beneficio con bajo CostoxClick (0.21) y buen TasaClicks (27%).
-- **CLÚSTER 3:** TasaClicks perfecto (100%) pero basado en un solo caso; no representativo.
+- **CLÚSTER 3:** TasaClicks perfecto (100%), aunque con pocas impresiones y click, pero se debería revisar pueden haber términos valiosos
 
 
 ### 5.3.- 🛠️ Reducción de Dimensionalidad con PCA
@@ -262,7 +262,7 @@ Se utilizó perplexity=30 y learning_rate=200
     <tr style="background-color: #f0f0f0;">
       <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0 (Irrelevantes)</th>
       <td style="padding: 6px; border: 1px solid #ccc;">https www decohere ai</td><td>6</td><td>2</td><td>0.1</td><td>0.33</td>
-      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster -1</th>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster -1 (Mayor tasa de clicks)</th>
       <td style="padding: 6px; border: 1px solid #ccc;">ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.714</td>
     </tr>
     <tr style="background-color: #f0f0f0;">
@@ -276,7 +276,7 @@ Se utilizó perplexity=30 y learning_rate=200
     <tr style="background-color: #e8f5e9;">
       <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1 (Caras pero efectivas)</th>
       <td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.71</td>
-      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0</th>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0 (Irrelevante)</th>
       <td>ia offline</td><td>5</td><td>0</td><td>0.0</td><td>0.0</td>
     </tr>
     <tr style="background-color: #e8f5e9;">
@@ -290,7 +290,7 @@ Se utilizó perplexity=30 y learning_rate=200
     <tr style="background-color: #fff3e0;">
       <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2 (Outlier)</th>
       <td>copilot</td><td>2060</td><td>47</td><td>0.1</td><td>0.02</td>
-      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1</th>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1 (Buena relación costo y tasa de clicks)</th>
       <td>free app builder without coding</td><td>5</td><td>1</td><td>0.33</td><td>0.2</td>
     </tr>
     <tr style="background-color: #fff3e0;">
@@ -304,7 +304,7 @@ Se utilizó perplexity=30 y learning_rate=200
     <tr style="background-color: #e3f2fd;">
       <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 3 (Alta eficiencia)</th>
       <td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
-      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2</th>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2 (Buen Rendimiento)</th>
       <td>criador de apresentações ia</td><td>5</td><td>2</td><td>0.41</td><td>0.4</td>
     </tr>
     <tr style="background-color: #e3f2fd;">
@@ -318,16 +318,16 @@ Se utilizó perplexity=30 y learning_rate=200
     <tr style="background-color: #fce4ec;">
       <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 4 (Alta visibilidad)</th>
       <td>ia para programação</td><td>80</td><td>21</td><td>0.49</td><td>0.26</td>
-      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;"></th>
-      <td></td><td></td><td></td><td></td><td></td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 3 (Tasa de Clicks Perfecta)</th>
+      <td>best coding ais</td><td>1</td><td>1</td><td>0.72</td><td>1.0</td>
     </tr>
     <tr style="background-color: #fce4ec;">
       <td>inteligencia artificial gratis</td><td>50</td><td>12</td><td>0.35</td><td>0.24</td>
-      <td></td><td></td><td></td><td></td><td></td>
+      <td>optimize code c#	</td><td>1</td><td>1</td><td>0.10</td><td>1.0</td>
     </tr>
     <tr style="background-color: #fce4ec;">
       <td>ia para criar slides gratuito</td><td>65</td><td>15</td><td>0.32</td><td>0.23</td>
-      <td></td><td></td><td></td><td></td><td></td>
+      <td>inteligencia artificial imagenes crear</td><td>1</td><td>1</td><td>0.10</td><td>1.0</td>
     </tr>
   </tbody>
 </table>
