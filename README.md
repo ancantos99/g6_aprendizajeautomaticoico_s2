@@ -1,4 +1,4 @@
-los# Aprendizaje No Supervisado 
+# Aprendizaje No Supervisado 
 ## 📑 Índice
 1. [📂 Descripción y Estructura del Proyecto](#1---descripción-y-estructura-del-proyecto)
 2. [💻 Entorno de Trabajo](#2---entorno-de-trabajo-y-librerías-utilizadas)
