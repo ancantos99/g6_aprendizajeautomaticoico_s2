@@ -259,8 +259,6 @@ Se utilizó perplexity=30 y learning_rate=200
     </tr>
   </thead>
   <tbody>
-    <!-- Clústeres -->
-    <!-- Usa un color de fondo diferente para cada grupo de clústeres -->
     <tr style="background-color: #f0f0f0;">
       <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0 (Irrelevantes)</td>
       <td style="padding: 6px; border: 1px solid #ccc;">https www decohere ai</td><td>6</td><td>2</td><td>0.1</td><td>0.33</td>
@@ -275,7 +273,6 @@ Se utilizó perplexity=30 y learning_rate=200
       <td style="padding: 6px; border: 1px solid #ccc;">yapay zeka görsel oluşturma</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
       <td style="padding: 6px; border: 1px solid #ccc;">ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
     </tr>
-
     <tr style="background-color: #e8f5e9;">
       <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1 (Caras pero efectivas)</td>
       <td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.71</td>
@@ -290,7 +287,6 @@ Se utilizó perplexity=30 y learning_rate=200
       <td>openai's musenet</td><td>7</td><td>4</td><td>0.53</td><td>0.57</td>
       <td>zzz code ai</td><td>47</td><td>0</td><td>0.0</td><td>0.0</td>
     </tr>
-
     <tr style="background-color: #fff3e0;">
       <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2 (Outlier)</td>
       <td>copilot</td><td>2060</td><td>47</td><td>0.1</td><td>0.02</td>
@@ -305,7 +301,6 @@ Se utilizó perplexity=30 y learning_rate=200
       <td></td><td></td><td></td><td></td><td></td>
       <td>inteligencia artificial imagenes</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
     </tr>
-
     <tr style="background-color: #e3f2fd;">
       <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 3 (Alta eficiencia)</td>
       <td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
@@ -320,7 +315,6 @@ Se utilizó perplexity=30 y learning_rate=200
       <td>ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
       <td>javascript ia</td><td>5</td><td>2</td><td>0.30</td><td>0.4</td>
     </tr>
-
     <tr style="background-color: #fce4ec;">
       <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 4 (Alta visibilidad)</td>
       <td>ia para programação</td><td>80</td><td>21</td><td>0.49</td><td>0.26</td>
