@@ -260,19 +260,21 @@ Se utilizó perplexity=30 y learning_rate=200
 			<td>TasaClicks</td>
 		</tr>
 		<tr>
-			<td>Clúster 0</td>
-			<td>https www decohere ai</td>
-			<td>6</td>
-			<td>2</td>
-			<td>0.1</td>
-			<td>0.33</td>
+			<td rowspan="3">Clúster 0 (Palabras o Frases irrelevantes)</td>
+			<td>https www decohere ai</td><td>6</td><td>2</td><td>0.1</td><td>0.33</td>
 			<td></td>
-			<td>Clúster -1</td>
-			<td>ia que cria imagens de graça</td>
-			<td>7</td>
-			<td>5</td>
-         <td>0.38</td>
-         <td>0.714</td>
+			<td  rowspan="3">Clúster -1</td>
+			<td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.714</td>
+		</tr>
+		<tr>			
+			<td>ai game generator</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
+			<td></td>			
+			<td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
+		</tr>
+		<tr>			
+			<td>yapay zeka görsel oluşturma</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
+			<td></td>			
+			<td>ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
 		</tr>
 	</tbody>
 </table>
