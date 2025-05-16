@@ -233,103 +233,111 @@ Se utilizó perplexity=30 y learning_rate=200
 <img src="imagenes/DBSCAN vs K-MEANS.png" width="500">
 </p>
 
-### 6.2.- 📊 Tabla resumen por cluster
+### 6.2.- 📊 Tabla resumen por clúster
 
 #### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER PARA CADA ALGORITMO Y ORDENADOS POR TASA DE CLICKS 
 
 <table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
-	<tbody>
-	<tr style="background-color: #333; color: white; text-align: center;">
-      	<th colspan="6" style="padding: 8px; border: 1px solid #999;">K-Means</th>
-      	<th colspan="6" style="padding: 8px; border: 1px solid #999;">DBSCAN</th>
-    	</tr>
-		<tr>
-         <td>Clúster</td>
-			<td>TerminoBusqueda</td>
-			<td>Impresiones</td>
-			<td>Clicks</td>
-			<td>CostoxClick</td>
-			<td>TasaClicks</td>
-         <td>Clúster</td>
-			<td>TerminoBusqueda</td>
-			<td>Impresiones</td>
-			<td>Clicks</td>
-			<td>CostoxClick</td>
-			<td>TasaClicks</td>
-		</tr>
-		<tr>
-			<td rowspan="3">Clúster 0 (Palabras o Frases irrelevantes)</td>
-			<td>https www decohere ai</td><td>6</td><td>2</td><td>0.1</td><td>0.33</td>
-			<td  rowspan="3">Clúster -1</td>
-			<td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.714</td>
-		</tr>
-		<tr>			
-			<td>ai game generator</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
-			<td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
-		</tr>
-		<tr>			
-			<td>yapay zeka görsel oluşturma</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
-			<td>ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
-		</tr>
-		<tr>
-			<td rowspan="3">Clúster 1 (Palabras más caras pero con tasa de clicks aceptable)</td>
-			<td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.71</td>
-			<td  rowspan="3">Clúster 0</td>
-			<td>ia offline</td><td>5</td><td>0</td><td>0.0</td><td>0.0</td>
-		</tr>
-		<tr>			
-			<td>app de inteligência artificial gratuito</td><td>5</td><td>3</td><td>0.39</td><td>0.60</td>
-			<td>decohere ai</td><td>50</td><td>0</td><td>0.0</td><td>0.0</td>
-		</tr>
-		<tr>			
-			<td>openai's musenet</td><td>7</td><td>4</td><td>0.53</td><td>0.57</td>
-			<td>zzz code ai</td><td>47</td><td>0</td><td>0.0</td><td>0.0</td>
-		</tr>
-		<tr>
-			<td rowspan="3">Clúster 2 (Outlier)</td>
-			<td>copilot</td><td>2060</td><td>47</td><td>0.1</td><td>0.02</td>
-			<td  rowspan="3">Clúster 1</td>
-			<td>free app builder without coding</td><td>5</td><td>1</td><td>0.33</td><td>0.2</td>
-		</tr>
-		<tr>			
-			<td></td><td></td><td></td><td></td><td></td>
-			<td>genmo ai</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
-		</tr>
-		<tr>			
-			<td></td><td></td><td></td><td></td><td></td>
-			<td>inteligencia artificial imagenes</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
-		</tr>
-		<tr>
-			<td rowspan="3">Clúster 3 (Contiene Palabras o Frases con alta eficiencia)</td>
-			<td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
-			<td  rowspan="3">Clúster 2</td>
-			<td>criador de apresentações ia</td><td>5</td><td>2</td><td>0.41</td><td>0.4</td>
-		</tr>
-		<tr>			
-			<td>ia para apresentação de slides</td><td>5</td><td>3</td><td>0.25</td><td>0.60</td>
-			<td>expand ai</td><td>5</td><td>2</td><td>0.10</td><td>0.4</td>
-		</tr>
-		<tr>			
-			<td>ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
-			<td>javascript ia</td><td>5</td><td>2</td><td>0.30</td><td>0.4</td>
-		</tr>
-		<tr>
-			<td rowspan="3">Clúster 4 (Contiene Palabras o Frases que generan alta visibilidad)</td>
-			<td>ia para programação	</td><td>80</td><td>21</td><td>0.49</td><td>0.26</td>
-			<td  rowspan="3"></td>
-			<td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>			
-			<td>inteligencia artificial gratis</td><td>50</td><td>12</td><td>0.35</td><td>0.24</td>
-			<td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>			
-			<td>ia para criar slides gratuito</td><td>65</td><td>15</td><td>0.32</td><td>0.23</td>
-			<td></td><td></td><td></td><td></td><td></td>
-		</tr>
-	</tbody>
+  <thead>
+    <tr style="background-color: #333; color: white; text-align: center;">
+      <th colspan="6" style="padding: 8px; border: 1px solid #999;">K-Means</th>
+      <th colspan="6" style="padding: 8px; border: 1px solid #999;">DBSCAN</th>
+    </tr>
+    <tr style="background-color: #666; color: white; text-align: center;">
+      <th style="padding: 6px; border: 1px solid #999;">Clúster</th>
+      <th style="padding: 6px; border: 1px solid #999;">Término Búsqueda</th>
+      <th style="padding: 6px; border: 1px solid #999;">Impresiones</th>
+      <th style="padding: 6px; border: 1px solid #999;">Clicks</th>
+      <th style="padding: 6px; border: 1px solid #999;">Costo x Click</th>
+      <th style="padding: 6px; border: 1px solid #999;">Tasa Clicks</th>
+      <th style="padding: 6px; border: 1px solid #999;">Clúster</th>
+      <th style="padding: 6px; border: 1px solid #999;">Término Búsqueda</th>
+      <th style="padding: 6px; border: 1px solid #999;">Impresiones</th>
+      <th style="padding: 6px; border: 1px solid #999;">Clicks</th>
+      <th style="padding: 6px; border: 1px solid #999;">Costo x Click</th>
+      <th style="padding: 6px; border: 1px solid #999;">Tasa Clicks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Clústeres -->
+    <!-- Usa un color de fondo diferente para cada grupo de clústeres -->
+    <tr style="background-color: #f0f0f0;">
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0 (Irrelevantes)</td>
+      <td style="padding: 6px; border: 1px solid #ccc;">https www decohere ai</td><td>6</td><td>2</td><td>0.1</td><td>0.33</td>
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster -1</td>
+      <td style="padding: 6px; border: 1px solid #ccc;">ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.714</td>
+    </tr>
+    <tr style="background-color: #f0f0f0;">
+      <td style="padding: 6px; border: 1px solid #ccc;">ai game generator</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
+      <td style="padding: 6px; border: 1px solid #ccc;">doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
+    </tr>
+    <tr style="background-color: #f0f0f0;">
+      <td style="padding: 6px; border: 1px solid #ccc;">yapay zeka görsel oluşturma</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
+      <td style="padding: 6px; border: 1px solid #ccc;">ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
+    </tr>
+
+    <tr style="background-color: #e8f5e9;">
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1 (Caras pero efectivas)</td>
+      <td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.71</td>
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0</td>
+      <td>ia offline</td><td>5</td><td>0</td><td>0.0</td><td>0.0</td>
+    </tr>
+    <tr style="background-color: #e8f5e9;">
+      <td>app de inteligência artificial gratuito</td><td>5</td><td>3</td><td>0.39</td><td>0.60</td>
+      <td>decohere ai</td><td>50</td><td>0</td><td>0.0</td><td>0.0</td>
+    </tr>
+    <tr style="background-color: #e8f5e9;">
+      <td>openai's musenet</td><td>7</td><td>4</td><td>0.53</td><td>0.57</td>
+      <td>zzz code ai</td><td>47</td><td>0</td><td>0.0</td><td>0.0</td>
+    </tr>
+
+    <tr style="background-color: #fff3e0;">
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2 (Outlier)</td>
+      <td>copilot</td><td>2060</td><td>47</td><td>0.1</td><td>0.02</td>
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1</td>
+      <td>free app builder without coding</td><td>5</td><td>1</td><td>0.33</td><td>0.2</td>
+    </tr>
+    <tr style="background-color: #fff3e0;">
+      <td></td><td></td><td></td><td></td><td></td>
+      <td>genmo ai</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
+    </tr>
+    <tr style="background-color: #fff3e0;">
+      <td></td><td></td><td></td><td></td><td></td>
+      <td>inteligencia artificial imagenes</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
+    </tr>
+
+    <tr style="background-color: #e3f2fd;">
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 3 (Alta eficiencia)</td>
+      <td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2</td>
+      <td>criador de apresentações ia</td><td>5</td><td>2</td><td>0.41</td><td>0.4</td>
+    </tr>
+    <tr style="background-color: #e3f2fd;">
+      <td>ia para apresentação de slides</td><td>5</td><td>3</td><td>0.25</td><td>0.60</td>
+      <td>expand ai</td><td>5</td><td>2</td><td>0.10</td><td>0.4</td>
+    </tr>
+    <tr style="background-color: #e3f2fd;">
+      <td>ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
+      <td>javascript ia</td><td>5</td><td>2</td><td>0.30</td><td>0.4</td>
+    </tr>
+
+    <tr style="background-color: #fce4ec;">
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 4 (Alta visibilidad)</td>
+      <td>ia para programação</td><td>80</td><td>21</td><td>0.49</td><td>0.26</td>
+      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;"></td>
+      <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr style="background-color: #fce4ec;">
+      <td>inteligencia artificial gratis</td><td>50</td><td>12</td><td>0.35</td><td>0.24</td>
+      <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr style="background-color: #fce4ec;">
+      <td>ia para criar slides gratuito</td><td>65</td><td>15</td><td>0.32</td><td>0.23</td>
+      <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </tbody>
 </table>
- 
+
   **Interpretación de ambas visualizaciones**
 
 - En ambos gráficos (PCA y t-SNE), pero mucho más en el t-SNE se observa una separación clara de los clústeres, en el gráfico PCA los clústers 0,1,3 se superponen un poco
