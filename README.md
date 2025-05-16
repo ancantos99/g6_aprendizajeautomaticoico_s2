@@ -237,7 +237,7 @@ Se utilizó perplexity=30 y learning_rate=200
 
 #### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER PARA CADA ALGORITMO Y ORDENADOS POR TASA DE CLICKS 
 
-<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px;">
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 12px;">
   <thead>
     <tr style="background-color: #333; color: white; text-align: center;">
       <th colspan="6" style="padding: 8px; border: 1px solid #999;">K-Means</th>
@@ -260,9 +260,9 @@ Se utilizó perplexity=30 y learning_rate=200
   </thead>
   <tbody>
     <tr style="background-color: #f0f0f0;">
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0 (Irrelevantes)</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0 (Irrelevantes)</th>
       <td style="padding: 6px; border: 1px solid #ccc;">https www decohere ai</td><td>6</td><td>2</td><td>0.1</td><td>0.33</td>
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster -1</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster -1</th>
       <td style="padding: 6px; border: 1px solid #ccc;">ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.714</td>
     </tr>
     <tr style="background-color: #f0f0f0;">
@@ -274,9 +274,9 @@ Se utilizó perplexity=30 y learning_rate=200
       <td style="padding: 6px; border: 1px solid #ccc;">ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
     </tr>
     <tr style="background-color: #e8f5e9;">
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1 (Caras pero efectivas)</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1 (Caras pero efectivas)</th>
       <td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.71</td>
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 0</th>
       <td>ia offline</td><td>5</td><td>0</td><td>0.0</td><td>0.0</td>
     </tr>
     <tr style="background-color: #e8f5e9;">
@@ -288,9 +288,9 @@ Se utilizó perplexity=30 y learning_rate=200
       <td>zzz code ai</td><td>47</td><td>0</td><td>0.0</td><td>0.0</td>
     </tr>
     <tr style="background-color: #fff3e0;">
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2 (Outlier)</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2 (Outlier)</th>
       <td>copilot</td><td>2060</td><td>47</td><td>0.1</td><td>0.02</td>
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 1</th>
       <td>free app builder without coding</td><td>5</td><td>1</td><td>0.33</td><td>0.2</td>
     </tr>
     <tr style="background-color: #fff3e0;">
@@ -302,9 +302,9 @@ Se utilizó perplexity=30 y learning_rate=200
       <td>inteligencia artificial imagenes</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
     </tr>
     <tr style="background-color: #e3f2fd;">
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 3 (Alta eficiencia)</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 3 (Alta eficiencia)</th>
       <td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 2</th>
       <td>criador de apresentações ia</td><td>5</td><td>2</td><td>0.41</td><td>0.4</td>
     </tr>
     <tr style="background-color: #e3f2fd;">
@@ -316,9 +316,9 @@ Se utilizó perplexity=30 y learning_rate=200
       <td>javascript ia</td><td>5</td><td>2</td><td>0.30</td><td>0.4</td>
     </tr>
     <tr style="background-color: #fce4ec;">
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 4 (Alta visibilidad)</td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;">Clúster 4 (Alta visibilidad)</th>
       <td>ia para programação</td><td>80</td><td>21</td><td>0.49</td><td>0.26</td>
-      <td rowspan="3" style="padding: 6px; border: 1px solid #ccc;"></td>
+      <th rowspan="3" style="padding: 6px; border: 1px solid #ccc;"></th>
       <td></td><td></td><td></td><td></td><td></td>
     </tr>
     <tr style="background-color: #fce4ec;">
