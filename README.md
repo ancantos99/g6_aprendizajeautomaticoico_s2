@@ -237,6 +237,46 @@ Se utilizó perplexity=30 y learning_rate=200
 
 #### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER ORDENADOS POR TASA DE CLICKS 
 
+<table>
+	<tbody>
+		<tr> 
+         <td colspan="6">K-Means</td>
+			<td></td>
+			<td colspan="6">DBSCAN</td>
+		</tr>
+		<tr>
+         <td>Clúster</td>
+			<td>TerminoBusqueda</td>
+			<td>Impresiones</td>
+			<td>Clicks</td>
+			<td>CostoxClick</td>
+			<td>TasaClicks</td>
+			<td></td>
+         <td>Clúster</td>
+			<td>TerminoBusqueda</td>
+			<td>Impresiones</td>
+			<td>Clicks</td>
+			<td>CostoxClick</td>
+			<td>TasaClicks</td>
+		</tr>
+		<tr>
+			<td>Clúster 0</td>
+			<td>https www decohere ai</td>
+			<td>6</td>
+			<td>2</td>
+			<td>0.1</td>
+			<td>0.33</td>
+			<td></td>
+			<td>Clúster -1</td>
+			<td>ia que cria imagens de graça</td>
+			<td>7</td>
+			<td>5</td>
+         <td>0.38</td>
+         <td>0.714</td>
+		</tr>
+	</tbody>
+</table>
+
 **CLÚSTER 0 (PALABRAS O FRASES IRRELEVANTES):**
 
 | TerminoBusqueda                  | Impresiones | Clicks | CostoxClick | TasaClicks |
