@@ -241,7 +241,6 @@ Se utilizó perplexity=30 y learning_rate=200
 	<tbody>
 		<tr> 
          <td colspan="6">K-Means</td>
-			<td></td>
 			<td colspan="6">DBSCAN</td>
 		</tr>
 		<tr>
@@ -251,7 +250,6 @@ Se utilizó perplexity=30 y learning_rate=200
 			<td>Clicks</td>
 			<td>CostoxClick</td>
 			<td>TasaClicks</td>
-			<td></td>
          <td>Clúster</td>
 			<td>TerminoBusqueda</td>
 			<td>Impresiones</td>
@@ -262,19 +260,72 @@ Se utilizó perplexity=30 y learning_rate=200
 		<tr>
 			<td rowspan="3">Clúster 0 (Palabras o Frases irrelevantes)</td>
 			<td>https www decohere ai</td><td>6</td><td>2</td><td>0.1</td><td>0.33</td>
-			<td></td>
 			<td  rowspan="3">Clúster -1</td>
 			<td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.714</td>
 		</tr>
 		<tr>			
 			<td>ai game generator</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
-			<td></td>			
 			<td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
 		</tr>
 		<tr>			
 			<td>yapay zeka görsel oluşturma</td><td>7</td><td>2</td><td>0.1</td><td>0.29</td>
-			<td></td>			
 			<td>ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Clúster 1 (Palabras más caras pero con tasa de clicks aceptable)</td>
+			<td>ia que cria imagens de graça</td><td>7</td><td>5</td><td>0.38</td><td>0.71</td>
+			<td  rowspan="3">Clúster 0</td>
+			<td>ia offline</td><td>5</td><td>0</td><td>0.0</td><td>0.0</td>
+		</tr>
+		<tr>			
+			<td>app de inteligência artificial gratuito</td><td>5</td><td>3</td><td>0.39</td><td>0.60</td>
+			<td>decohere ai</td><td>50</td><td>0</td><td>0.0</td><td>0.0</td>
+		</tr>
+		<tr>			
+			<td>openai's musenet</td><td>7</td><td>4</td><td>0.53</td><td>0.57</td>
+			<td>zzz code ai</td><td>47</td><td>0</td><td>0.0</td><td>0.0</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Clúster 2 (Outlier)</td>
+			<td>copilot</td><td>2060</td><td>47</td><td>0.1</td><td>0.02</td>
+			<td  rowspan="3">Clúster 1</td>
+			<td>free app builder without coding</td><td>5</td><td>1</td><td>0.33</td><td>0.2</td>
+		</tr>
+		<tr>			
+			<td></td><td></td><td></td><td></td><td></td>
+			<td>genmo ai</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
+		</tr>
+		<tr>			
+			<td></td><td></td><td></td><td></td><td></td>
+			<td>inteligencia artificial imagenes</td><td>5</td><td>1</td><td>0.10</td><td>0.2</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Clúster 3 (Contiene Palabras o Frases con alta eficiencia)</td>
+			<td>doctrina ai exam</td><td>9</td><td>6</td><td>0.09</td><td>0.67</td>
+			<td  rowspan="3">Clúster 2</td>
+			<td>criador de apresentações ia</td><td>5</td><td>2</td><td>0.41</td><td>0.4</td>
+		</tr>
+		<tr>			
+			<td>ia para apresentação de slides</td><td>5</td><td>3</td><td>0.25</td><td>0.60</td>
+			<td>expand ai</td><td>5</td><td>2</td><td>0.10</td><td>0.4</td>
+		</tr>
+		<tr>			
+			<td>ai project maker</td><td>5</td><td>3</td><td>0.10</td><td>0.60</td>
+			<td>javascript ia</td><td>5</td><td>2</td><td>0.30</td><td>0.4</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Clúster 4 (Contiene Palabras o Frases que generan alta visibilidad)</td>
+			<td>ia para programação	</td><td>80</td><td>21</td><td>0.49</td><td>0.26</td>
+			<td  rowspan="3"></td>
+			<td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>			
+			<td>inteligencia artificial gratis</td><td>50</td><td>12</td><td>0.35</td><td>0.24</td>
+			<td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>			
+			<td>ia para criar slides gratuito</td><td>65</td><td>15</td><td>0.32</td><td>0.23</td>
+			<td></td><td></td><td></td><td></td><td></td>
 		</tr>
 	</tbody>
 </table>
