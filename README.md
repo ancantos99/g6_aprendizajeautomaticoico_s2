@@ -13,6 +13,7 @@
    1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61---gráficos-comparativos-entre-k-means-y-dbscan)
    2. [📊 Tabla resumen de características medias por cluster](#63---tabla-resumen-de-características-medias-por-cluster)
 7. [💬 Reflexión y comunicación](#7---reflexión-y-comunicación)
+8. [🧑‍💻 Autores](#6---autores)
 ## 1.- 📂 Descripción del proyecto
 El equipo de Marketing está preparando una campaña publicitaria para productos relacionados con la inteligencia artificial y nos ha solicitado que les proporcionemos palabras clave que optimicen sus búsquedas en Google.
 
@@ -290,5 +291,12 @@ Las principales diferencias encontradas en los diferentes fueron:
 - En DBSCAN más robusto frente a outliers (los omite) y se centra en patrones comunes.
 
 La principal limitante en el conjunto de la evaluación fue la falta de interpretabilidad al considerar más variables.
+
+## 8.- 🧑‍💻 Autores
+
+- **María Paola Mendoza Mendieta**
+- **Andrés Martín Cantos Rivadeneira**
+- **Andrea Fernanda Moran Vargas**  
+- **Pedro Jose Vidal Orus**
 
 
