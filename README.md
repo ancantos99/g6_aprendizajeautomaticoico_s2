@@ -209,6 +209,7 @@ Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2 
 **Interpretación**
 
 - PCA muestra el Clúster 4 de KMEANS relativamente aislado en la parte superior lo que sugiere que tiene características bastantes distintas al resto de datos, esto mismo sucede con el Clúster -1 en DBSCAN
+- Se observa que DBSCAN muestra mejores fronteras entre grupos visibles mientras que en K-means se superponen un poco los clústeres 0, 1, 3
  
 ### 5.4.- 🛠️ Reducción de Dimensionalidad con t-SNE
 
@@ -223,7 +224,8 @@ Se utilizó perplexity=30 y learning_rate=200
 **Interpretación**
 
 - A primera vista se observa que t-SNE logra “estirar” y separar los datos en el plano 2D de una forma que facilita la interpretación visual.
-- En este gráfico se aprecia mejor como cada algoritmo (K-Means, DBSCAN) interpreta la estructura interna de los datos. Se observa que DBSCAN muestra mejores fronteras entre grupos visibles
+- En este gráfico se aprecia mejor como cada algoritmo (K-Means, DBSCAN) interpreta la estructura interna de los datos.
+- El "Clúster -1" en los resultados de DBSCAN es significativo. Contiene términos de búsqueda que el algoritmo no pudo asignar claramente a ningún clúster basado en su densidad. Algunos de estos términos, como "ia que cria imagens de graça", tienen métricas de interacción relativamente altas, lo que podría indicar que DBSCAN identificó correctamente algunos valores atípicos o bien que estos puntos podrían merecer una inspección más detallada
 
 ## 6.- 📊 Visualización de resultados
 
@@ -332,14 +334,9 @@ Se utilizó perplexity=30 y learning_rate=200
   </tbody>
 </table>
 
-  **Interpretación de ambas visualizaciones**
+**Interpretación**
 
-- En ambos gráficos (PCA y t-SNE), pero mucho más en el t-SNE se observa una separación clara de los clústeres, en el gráfico PCA los clústers 0,1,3 se superponen un poco
-- en nuestro caso es más útil el gráfico t-SNE para realizar un análisis
-  - El CLÚSTER 0 (palabras irrelevantes) se encuentra en varias áreas dispersas, lo que podría indicar que en este grupo algunas palabras no son útiles pero otras si.
-  - El CLÚSTER 1 (palabras caras con tasa de clicks aceptable) parece formar un grupo más definido, aunque con cierta dispersión, pero esta dispersión sigue compacta, lo que podría reflejar la variabilidad en el costo y la tasa de clics dentro de este grupo.
-  - El CLÚSTER 3 (alta eficiencia) se visualiza como un grupo relativamente compacto, lo que sugiere que las palabras clave con alta tasa de clics tienden a compartir características similares.
-  - El CLÚSTER 4 (alta visibilidad) también forma un grupo compacto, aunque menos extenso que el clúster 3, lo que podría indicar una menor variedad de palabras que generan muchas impresiones y clics.
+- Podemos intentar relacionar los clústeres de K-Means con los de DBSCAN. Por ejemplo, algunos de los términos en el "Clúster 1 (Caras pero efectivas)" de K-Means también aparecen en el "Clúster 0" de DBSCAN. Sin embargo, la interpretación de estos clústeres es diferente según el algoritmo. K-Means los etiqueta por su costo por clic y efectividad, mientras que DBSCAN los agrupa por densidad. Esta diferencia subraya cómo la elección del algoritmo de clustering influye en la interpretación de los resultados.
 
 ## 7.- 💬 Reflexión y comunicación
 
