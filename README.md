@@ -348,6 +348,6 @@ La principal limitante en el conjunto de la evaluación fue la falta de interpre
 - **María Paola Mendoza Mendieta**
 - **Andrés Martín Cantos Rivadeneira**
 - **Andrea Fernanda Moran Vargas**  
-- **Pedro Jose Vidal Orus**
+- **Pedro José Vidal Orus**
 
 
