@@ -9,7 +9,7 @@
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
 6. [📊 Visualización de resultados](#6---visualización-de-resultados)
    1. [📊 Reducción de Dimensionalidad con PCA](#61---reducción-de-dimensionalidad-con-pca)
-   2. [📊 Reducción de Dimensionalidad con t-SNE](#62--️-reducción-de-dimensionalidad-con-t-sne)
+   2. [📊 Reducción de Dimensionalidad con t-SNE](#62---reducción-de-dimensionalidad-con-t-sne)
    3. [📊 Tabla resumen por clúster](#63---tabla-resumen-por-clúster)
 7. [💬 Reflexión y comunicación](#7---reflexión-y-comunicación)
 8. [🧑‍💻 Autores](#6---autores)
