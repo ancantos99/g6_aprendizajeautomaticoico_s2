@@ -7,11 +7,10 @@
 5. [🤖 Implementación de Modelos](#5---implementación-de-modelos)
    1. [🛠️ Implementación de K means](#51--️-implementación-de-k-means)
    2. [🛠️ Implementación de DBSCAN](#52--️-implementación-de-dbscan)
-   3. [🛠️ Reducción de Dimensionalidad con PCA](#53--️-reducción-de-dimensionalidad-con-pca)
-   4. [🛠️ Reducción de Dimensionalidad con t-SNE](#54--️-reducción-de-dimensionalidad-con-t-sne)
 6. [📊 Visualización de resultados](#6---visualización-de-resultados)
-   1. [📊 Gráficos comparativos entre K-means y DBSCAN](#61---gráficos-comparativos-entre-k-means-y-dbscan)
-   2. [📊 Tabla resumen por clúster](#62---tabla-resumen-por-clúster)
+   1. [📊 Reducción de Dimensionalidad con PCA](#53--️-reducción-de-dimensionalidad-con-pca)
+   2. [📊 Reducción de Dimensionalidad con t-SNE](#54--️-reducción-de-dimensionalidad-con-t-sne)
+   3. [📊 Tabla resumen por clúster](#62---tabla-resumen-por-clúster)
 7. [💬 Reflexión y comunicación](#7---reflexión-y-comunicación)
 8. [🧑‍💻 Autores](#6---autores)
 ## 1.- 📂 Descripción del proyecto
@@ -195,8 +194,8 @@ Muchos puntos están clasificados como -1 (ruido): Esto indica que una parte de 
 - **CLÚSTER 2:** Mejor eficiencia costo-beneficio con bajo CostoxClick (0.21) y buen TasaClicks (27%).
 - **CLÚSTER 3:** TasaClicks perfecto (100%), aunque con pocas impresiones y click, pero se debería revisar pueden haber términos valiosos
 
-
-### 5.3.- 🛠️ Reducción de Dimensionalidad con PCA
+## 6.- 📊 Visualización de resultados
+### 6.1.- 📊 Reducción de Dimensionalidad con PCA
 
 #### Visualización en 2D de los Clúster usando PCA
 
@@ -211,7 +210,7 @@ Con el fin de mejorar la visualización del gráfico, se excluyó el Clúster 2 
 - PCA muestra el Clúster 4 de KMEANS relativamente aislado en la parte superior lo que sugiere que tiene características bastantes distintas al resto de datos, esto mismo sucede con el Clúster -1 en DBSCAN
 - Se observa que DBSCAN muestra mejores fronteras entre grupos visibles mientras que en K-means se superponen un poco los clústeres 0, 1, 3
  
-### 5.4.- 🛠️ Reducción de Dimensionalidad con t-SNE
+### 6.2.- 📊 Reducción de Dimensionalidad con t-SNE
 
 #### Visualización en 2D de los Clúster usando t-SNE
 
@@ -227,15 +226,7 @@ Se utilizó perplexity=30 y learning_rate=200
 - En este gráfico se aprecia mejor como cada algoritmo (K-Means, DBSCAN) interpreta la estructura interna de los datos.
 - El "Clúster -1" en los resultados de DBSCAN es significativo. Contiene términos de búsqueda que el algoritmo no pudo asignar claramente a ningún clúster basado en su densidad. Algunos de estos términos, como "ia que cria imagens de graça", tienen métricas de interacción relativamente altas, lo que podría indicar que DBSCAN identificó correctamente algunos valores atípicos o bien que estos puntos podrían merecer una inspección más detallada
 
-## 6.- 📊 Visualización de resultados
-
-### 6.1.- 📊 Gráficos comparativos entre K-means y DBSCAN
-
-<p align="center">
-<img src="imagenes/DBSCAN vs K-MEANS.png" width="500">
-</p>
-
-### 6.2.- 📊 Tabla resumen por clúster
+### 6.3.- 📊 Tabla resumen por clúster
 
 #### TOP 3 DE LOS MEJORES TÉRMINOS DE CADA CLÚSTER PARA CADA ALGORITMO Y ORDENADOS POR TASA DE CLICKS 
 
