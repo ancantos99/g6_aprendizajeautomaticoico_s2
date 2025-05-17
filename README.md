@@ -13,6 +13,7 @@
    3. [📊 Tabla resumen por clúster](#63---tabla-resumen-por-clúster)
 7. [💬 Reflexión y comunicación](#7---reflexión-y-comunicación)
 8. [🧑‍💻 Autores](#6---autores)
+   
 ## 1.- 📂 Descripción del proyecto
 El equipo de Marketing está preparando una campaña publicitaria para productos relacionados con la inteligencia artificial y nos ha solicitado que les proporcionemos palabras clave que optimicen sus búsquedas en Google.
 
